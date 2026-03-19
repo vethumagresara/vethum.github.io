@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Vethum Hewage | Strategic Leader & Full-Stack Developer</title>
+  <meta name="title" content="Vethum Hewage | Strategic Leader & Full-Stack Developer">
+  <meta name="description" content="Official portfolio of Vethum Hewage, a Computer Engineering Undergraduate, Award-Winning Leader, and Full-Stack Developer based in Sri Lanka.">
+  <meta name="keywords" content="Vethum Hewage, Vethum, Hewage, Computer Engineering, Rotaract KDU President, Fullstack Developer Sri Lanka, Strategic Leader">
+  <meta name="author" content="Vethum Hewage">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vethumhewage.me/">
+  <meta property="og:title" content="Vethum Hewage | Portfolio">
+  <meta property="og:description" content="Strategic Leader and Computer Engineering Undergraduate with a proven track record of successfully leading projects.">
+  <meta property="og:image" content="https://vethumhewage.me/img3.jpg">
+
+  <!-- Favicon and Fonts -->
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Vethum<span>Hewage</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- CV Button - Replace YOUR_GOOGLE_DRIVE_LINK with your actual link -->
+    <a href="https://drive.google.com/file/d/1QbFO0Wma_2xEfXd8W4xARMKensu9Xc-m/view?usp=sharing" target="_blank" class="cv-btn">
+      <span>View My CV</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#services" class="mobile-link">Achievements</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="YOUR_GOOGLE_DRIVE_LINK" target="_blank" class="cv-btn mobile-cv">View My CV</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text-col">
+        <div class="hero-label reveal">Strategic Leader & Final Year Undergraduate</div>
+        <h1 class="hero-name reveal">
+          <span class="name-line">Vethum</span>
+          <span class="name-line italic">Hewage</span>
+        </h1>
+        <p class="hero-desc reveal">
+          Strategic Leader and Computer Engineering Undergraduate with a proven track record of successfully leading Projects & transforming innovative ideas into
+award-winning, nationwide initiatives. Recognized for out-of-the-box thinking and inspirational & Responsible leadership.
+        </p>
+        <div class="hero-contacts reveal">
+          <a href="mailto:vethumagresara@gmail.com" class="contact-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            vethumagresara@gmail.com
+          </a>
+          <a href="tel:+94753147781" class="contact-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +94 76 758 4859
+          </a>
+          <a href="https://linkedin.com/in/vethum-hewage" target="_blank" class="contact-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/vethum-hewage
+          </a>
+
+        </div>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn-primary">See My Work</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-image-col reveal">
+        <!-- ===== ADD YOUR PROFILE PHOTO HERE ===== -->
+        <div class="profile-photo-placeholder">
+          <div class="photo-inner">
+            
+            <img src="img3.jpg" alt="Vethum Hewage" class="profile-photo" />
+          </div>
+        </div>
+        <div class="profile-badge badge-1">Award-Winning Leader</div>
+        <div class="profile-badge badge-2">Fullstack<br> Developer</div>
+        <div class="profile-badge badge-3">Project Manager </div>
+		
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span> </span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">About <em>Me</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <!-- ===== ADD YOUR ABOUT PHOTO HERE ===== -->
+          <div class="about-photo-placeholder">
+            <div class="photo-inner">
+              <img src="img1.jpg" alt="About Vethum Hewage" class="about-photo" />
+            </div>
+          </div>
+          <div class="about-img-accent"></div>
+        </div>
+        <div class="about-text reveal-right">
+          <p class="about-lead">
+Results-oriented Strategic Leader & a Computer Engineering Undergraduate with a proven track record of leading and managing large-scale organizational initiatives and cross-functional teams         </p>
+          <p class="about-body">
+           Combining technical proficiency in Full-Stack Development and Agile methodologies with formal qualifications in Business and Human Resources Management.        </p>
+          <p class="about-body">
+             I leverage strong communication and crisis management skills to guide diverse committees through the full project lifecycle with experiences gained as the Head Prefect(Dharmaraja College-Kandy 2021/22), Past President-Rotaract Club of KDU(Awarded as the Most Outstanding President 2024/25) and other leadership roles. Dedicated to bridging the gap between technical development and operational strategy to deliver high-impact, user-centric solutions.            
+			</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">100+</span>
+              <span class="stat-label">Projects Led</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Award Recognitions</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3.667</span>
+              <span class="stat-label">GPA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- ==================== EXPERIENCE ==================== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Experience</span>
+        <h2 class="section-title">My <em>Journey</em></h2>
+      </div>
+
+      <div class="experience-tabs">
+        <button class="exp-tab active" data-tab="education">Education</button>
+		<button class="exp-tab" data-tab="volunteer">Leadership & Volunteering</button>
+		<button class="exp-tab " data-tab="work">Work</button>
+        
+        
+      </div>
+
+      <!-- Work -->
+      <div class="exp-panel " id="tab-work">
+        <div class="timeline">
+		
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025 — Present</div>
+              <h3>Founder & Event Manager</h3>
+              <h4><img src="hega.jpg" alt="Vethum Hewage" class="inst-logo">Hega Events (PVT) LTD </h4>
+            </div>
+          </div>
+		  
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Previous</div>
+              <h3>Marketing Assistant & Social Media Handler</h3>
+              <h4>Monarch Security Services (PVT) LTD</h4>
+            </div>
+          </div>
+		  
+        </div>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="exp-panel" id="tab-volunteer">
+        <div class="timeline">
+		
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024 July — 2025 July</div>
+              <h3>President</h3>
+              <h4> <img src="rackdu.png" alt="Vethum Hewage" class="inst-logo">Rotaract Club of KDU</h4>
+              <ul class="timeline-list">
+                <li>Awarded as the Most Outstanding President 2024/25 in Sri Lanka & Maldives</li>
+                <li>Led the Club to gain the Recognition of Most Outstanding Club 2024/25 for the first time in 12 Years of History</li>
+                <li>Completed 50+ Effective Projects (Including Rota Fiesta,Panhinda,Future Me,Rise Beyond etc) adn got 15+ Award Recognitions</li>
+              </ul>
+            </div>
+          </div>
+		  
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2021 — 2023</div>
+              <h3>Head Prefect</h3>
+              <h4><img src="drck.png" alt="KDU Logo" class="inst-logo">Dharmaraja College Kandy</h4>
+			  <ul class="timeline-list">
+                <li>Completed 30+ Projects & School Events</li>
+                <li>Recognized by the Commander of Sri Lanka Air Force for the Speech at the Felicitation Ceremony</li>
+              </ul>
+            </div>
+          </div>
+		  
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020</div>
+              <h3>Director - Professional Development</h3>
+              <h4><img src="rackdu.png" alt="Vethum Hewage" class="inst-logo">Rotaract Club of KDU</h4>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020</div>
+              <h3>Membership Development Team</h3>
+              <h4><img src="ieeesac.png" alt="KDU Logo" class="inst-logo">IEEE Sri Lanka Section (SAC)</h4>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020</div>
+              <h3>Head - Membership Development</h3>
+              <h4><img src="ieeecs.png" alt="Vethum Hewage" class="inst-logo">IEEE Computer Society(KDU)</h4>
+            </div>
+          </div>	
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020</div>
+              <h3>Director - Industrial Relations</h3>
+              <h4><img src="bcskdu.jpg" alt="KDU Logo" class="inst-logo">British Computer Society - Student Chapter(KDU)</h4>
+            </div>
+          </div>			  
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020</div>
+              <h3>Student Chairperson</h3>
+              <h4>Sri Lanka's First Distance Education System</h4>
+            </div>
+          </div>
+		  
+        </div>
+      </div>
+
+
+ <!-- Education -->
+<div class="exp-panel active" id="tab-education">
+  <div class="timeline">
+    
+	<div class="timeline-item reveal">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2023-2027</div>
+        <h3>BSc (Hons) in Computer Engineering </h3>
+        <h4>
+          <img src="kdulogo.png" alt="Vethum Hewage" class="inst-logo">
+          General Sir John Kotelawala Defence University
+        </h4>
+      </div>
+    </div>
+	
+    <div class="timeline-item reveal">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2024-Present</div>
+        <h3>Bachelor of Information Technology(BIT)</h3>
+        <h4>
+          <img src="ucsclogo.png" alt="Vethum Hewage" class="inst-logo">
+          University of Colombo — School of Computing
+        </h4>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2025-Present</div>
+        <h3>Certified Associate in Project Management(CAPM)Certified Course</h3>
+        <h4>
+          <img src="CAPM.png" alt="Vethum Hewage" class="inst-logo">
+          PMI(Project Managemenet Institute)
+        </h4>
+      </div>
+	</div>
+	
+    <div class="timeline-item reveal">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2021</div>
+        <h3>Diploma in Information Technology</h3>
+        <h4>
+          <img src="bcs.png" alt="Vethum Hewage" class="inst-logo">
+          British Computer Society
+        </h4>
+      </div>
+	</div>
+	
+    <div class="timeline-item reveal">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2025-Present</div>
+        <h3>Diploma in Human Resource Management</h3>
+        <h4>
+          <img src="imbs.png" alt="Vethum Hewage" class="inst-logo">
+          IMBS Green Campus
+        </h4>
+      </div>
+	 </div> 
+	 
+	 <div class="timeline-item reveal">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2025-Present</div>
+        <h3>Diploma in Business Management</h3>
+        <h4>
+          <img src="imbs.png" alt="Vethum Hewage" class="inst-logo">
+          IMBS Green Campus
+        </h4>
+      </div>
+	 </div> 
+	 
+	 <div class="timeline-item reveal">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2025-Present</div>
+        <h3>Certificate in Digital Marketing</h3>
+        <h4>
+          <img src="iebt.jpg" alt="Vethum Hewage" class="inst-logo">
+          IEBT Campus
+        </h4>
+      </div>
+	 </div> 
+    
+  </div>
+</div>
+  <!-- ==================== Achivements ==================== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Achievements</span>
+        <h2 class="section-title">My <em>Achievements</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+		  <img src="bestpresident.png" height="300" width="500">
+          <h3 align="center">Most Outstanding President 2024/25</h3>
+          <p align="center">Awarded the top presidential honor in Rotaract District 3220 (Sri Lanka & Maldives) out of 98 club presidents for the 2024/25 term.</p>
+
+        </div>
+        <div class="service-card reveal">
+            <img src="deanlist.png" height="300" width="500">
+          <h3 align="center">Dean's List 2023/24</h3>
+          <p align="center">Recognized by the Dean, for being selected to the Dean's List -Faculty of Computing with a GPA of 3.667 </p>
+
+        </div>
+        <div class="service-card reveal">
+          <img src="bestclub.png" height="300" width="500">
+          <h3 align="center">Most Outstanding Club 2024/25</h3>
+          <p align="center">In 12 Years of History, Led the Club as the President ,to be awarded as the Most Outstanding Club amoung 98+ clubs on Sri Lanka & Maldives,For the first time in History.</p>
+
+        </div>
+        <div class="service-card reveal">
+          <img src="bestfundraiser.png" height="300" width="500">
+          <h3 align="center">Best Fundraiser</h3>
+          <p align="center">Project Lead & Overlooker of Project Rota Fiesta 2025(Musical Concert with 6000+ Participants)-which was awarded as the Most outstanding Fundraiser with Surplus of 4 Million+</p>
+
+        </div>
+        <div class="service-card reveal">
+          <img src="vcreco.png" height="300" width="500">
+          <h3 align="center">Special University Recognition</h3>
+          <p align="center"> A special University Recognition was given by the Vice Chancellor and the Deputy Vice Chancellor of General Sir John Kotelawala Defence University for exceptional Performance and leadership shown at Rotaract Club of KDU for the years 2024/25</p>
+
+        </div>
+        <div class="service-card reveal">
+          <img src="ICT.png" height="300" width="500">
+          <h3 align="center">IT Competitions</h3>
+          <p align="center">Won 1st,2nd & 3rd Places in Several Hackathons,Programming Competitions,Robotics Competitions,Quiz Competitions & Graphic Designing Competitions</p>
+
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+  
+  <!-- ==================== SKILLS ==================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Skills</span>
+        <h2 class="section-title">My <em>Skills</em></h2>
+      </div>
+
+      <div class="skills-marquee-wrap">
+        <div class="skills-marquee">
+          <div class="marquee-track">
+            <span>Business Ops</span><span>TypeScript</span><span>Web Development</span><span>Figma</span>
+            <span>Photoshop</span><span>Human Resource Management</span><span>Canva</span><span>MERN Stack</span>
+            <span>Java</span><span>Marketing</span><span>UI/UX Design</span><span>Team Management</span>
+            <span>Next.js</span><span>Business Ops</span><span>TypeScript</span><span>Web Development</span><span>Figma</span>
+            <span>Photoshop</span><span>Human Resource Management</span><span>Canva</span><span>MERN Stack</span>
+            <span>Java</span><span>Marketing</span><span>UI/UX Design</span><span>Team Management</span>
+            <span>Next.js</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Software Skills -->
+        <div class="skills-category reveal">
+          <h3 class="category-title">
+            <span class="cat-icon">⟨/⟩</span> Tech & Graphic Designing Skills
+          </h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Full-Stack Web Development</span>
+                <span class="skill-tag">Web Development</span>
+              </div>
+              <p class="skill-desc">Developing scalable, high-performance applications using the MERN Stack (MongoDB, Express, React, Node.js), augmented with TypeScript, Supabase, and modern HTML5/CSS3.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Frontend Design</span>
+                <span class="skill-tag">HTML / CSS</span>
+              </div>
+              <p class="skill-desc">Crafting semantic, responsive, and beautifully styled digital interfaces using modern CSS techniques.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">UI/UX Design</span>
+                <span class="skill-tag">Prototyping</span>
+              </div>
+              <p class="skill-desc">Crafting intuitive, user-centered digital experiences and interactive wireframes using Figma</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Graphic Design</span>
+                <span class="skill-tag">Visuals</span>
+              </div>
+              <p class="skill-desc">Producing professional vector graphics, photo manipulations, and print-ready collateral via Photoshop and Canva.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Brand Identity</span>
+                <span class="skill-tag">Strategy</span>
+              </div>
+              <p class="skill-desc">Creating comprehensive brand systems, logos, and dynamic digital marketing materials utilizing Canva and Affinity Designer.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">IoT Integration</span>
+                <span class="skill-tag">Hardware</span>
+              </div>
+              <p class="skill-desc">Architecting smart, automated hardware-software bridged solutions using Arduino, Raspberry Pi, and RFID technology.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Database Systems</span>
+                <span class="skill-tag">Architecture</span>
+              </div>
+              <p class="skill-desc">Designing and managing robust data structures to support centralized information portals and distributed workflows.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-tag">DevOps</span>
+              </div>
+              <p class="skill-desc">Version control, branching strategies, and collaborative development workflows using Git and GitHub.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Design Skills -->
+        <div class="skills-category reveal">
+          <h3 class="category-title">
+            <span class="cat-icon">✦</span> Project Management & Leadership Skills
+          </h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Strategic Leadership</span>
+                <span class="skill-tag">Visionary</span>
+              </div>
+              <p class="skill-desc">Experiance in Transforming innovative ideas into benchmark-setting, award-winning nationwide initiatives and organizational milestones.(Proven in several occasions)</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">HR/Team Management</span>
+                <span class="skill-tag">Cross-Functional</span>
+              </div>
+              <p class="skill-desc">Uniting and guiding diverse groups, having successfully led 500+ undergraduates and managed boards of 100+ Students etc.</p>
+            </div>
+			<div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Agile Operations</span>
+                <span class="skill-tag">Scrum / Jira</span>
+              </div>
+              <p class="skill-desc">Efficiently tracking milestones, managing resources, and guiding technical teams through the full software project lifecycle.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Event Management</span>
+                <span class="skill-tag">Logistics</span>
+              </div>
+              <p class="skill-desc">Driving operational excellence under pressure by coordinating large-scale concerts and events for crowds of up to 6,000+ attendees.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Communication</span>
+                <span class="skill-tag">Mentorship</span>
+              </div>
+              <p class="skill-desc">Delivering impactful outbound training, career guidance, and leadership seminars to massive audiences exceeding 1,200 students.ICT tutoring for O/L & A/L Students.</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Business Strategy</span>
+                <span class="skill-tag">Operations</span>
+              </div>
+              <p class="skill-desc">Fostering healthy organizational dynamics and strategic alignment leveraging formal training in Human Resource and Business Management.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Financial Oversight</span>
+                <span class="skill-tag">Fundraising</span>
+              </div>
+              <p class="skill-desc">Orchestrating major financial initiatives, including directing successful fundraising campaigns that generated over LKR 4 Million in profit.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <span class="skill-name">Digital Marketing</span>
+                <span class="skill-tag">Outreach</span>
+              </div>
+              <p class="skill-desc">Maximizing brand engagement and audience growth through strategic placement and comprehensive social media campaigns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Projects</span>
+        <h2 class="section-title">Featured <em>Projects</em></h2>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+		<button class="filter-btn" data-filter="csr">Community Service Projects</button>
+		<button class="filter-btn" data-filter="pd">Professional Development Projects</button>
+		<button class="filter-btn" data-filter="events">Events</button>
+		<button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+		<button class="filter-btn" data-filter="tech">Tech Projects</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-category="web">
+          <!-- ===== ADD PROJECT IMAGE HERE ===== -->
+          <div class="project-img-placeholder">
+            <div class="placeholder-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <p>Add Project Screenshot</p>
+            </div>
+            <span class="project-featured-badge">Featured</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Web Application</span>
+            <h3>RACKDU Web</h3>
+            <p>Developed an award-winning website for the Rotaract Club of KDU. Chaired and led the Club Website Project at www.rackdu.org.</p>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>Supabase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.rackdu.org" target="_blank" class="project-link">Live Site →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img-placeholder">
+            <div class="placeholder-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <p>Add Project Screenshot</p>
+            </div>
+            <span class="project-featured-badge">Featured</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Web Application</span>
+            <h3>Moot Court and Debate Society of KDU</h3>
+            <p>Designed and developed the official web presence for the Moot Court and Debating Society of General Sir John Kotelawala Defence University.</p>
+            <div class="project-tags">
+              <span>React</span><span>CSS</span><span>Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img-placeholder">
+            <div class="placeholder-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <p>Add Project Screenshot</p>
+            </div>
+            <span class="project-featured-badge">Featured</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Web Application</span>
+            <h3>Legal Ease</h3>
+            <p>A web application developed to streamline and manage legal cases efficiently with intuitive UI and smart workflows.</p>
+            <div class="project-tags">
+              <span>React</span><span>Supabase</span><span>TypeScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="graphic">
+          <div class="project-img-placeholder">
+            <div class="placeholder-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <p>Add Design Preview</p>
+            </div>
+            <span class="project-featured-badge">Featured</span>
+          </div>
+          <div class="project-info">
+            <span class="project-category-tag">Graphic Design</span>
+            <h3>Pandama Event Flyer Design</h3>
+            <p>Created comprehensive brand identity packages including logo design, color palettes, typography systems, and brand guidelines for a musical event.</p>
+            <div class="project-tags">
+              <span>Photoshop</span><span>Illustrator</span><span>Canva</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link behance-link">Behance →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Get In <em>Touch</em></h2>
+        <p class="section-sub">Let's create something amazing together</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Talk</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you need a designer, developer, or both — let's connect.</p>
+
+          <div class="contact-details">
+            <a href="mailto:vethumagresara@gmail.com" class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <span class="detail-label">Email</span>
+                <span class="detail-value">vethumagresara@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+94753147781" class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="detail-label">Phone</span>
+                <span class="detail-value">+94 76 758 4859</span>
+              </div>
+            </a>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Colombo, Sri Lanka</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/vethum-hewage" target="_blank" class="social-btn" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" target="_blank" class="social-btn" aria-label="Behance">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 13.5h-4V5h4s3 0 3 4S8.5 13.5 8.5 13.5z"/><path d="M4.5 13.5h4.5s3.5 0 3.5 4.5-3.5 4.5-3.5 4.5H4.5V13.5z"/><path d="M17 7h5M19.5 5C16 5 15 8 15 9.5s1 4.5 4.5 4.5S24 12 24 12"/></svg>
+            </a>
+            <a href="#" target="_blank" class="social-btn" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo"><span>Vethum</span> Hewage</div>
+        <p class="footer-text">Designed & Developed by <strong>Vethum Hewage</strong> </p>
+        <div class="footer-socials">
+          
+          <a href="https://linkedin.com/in/vethum-hewage" target="_blank" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
