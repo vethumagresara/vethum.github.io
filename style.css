@@ -1367,4 +1367,264 @@ img { max-width: 100%; display: block; }
   button, a, .filter-btn, .exp-tab {
     cursor: pointer !important; 
   }
+}}
+
+/* =============================================
+   COMPREHENSIVE MOBILE RESPONSIVE FIX
+   ============================================= */
+
+/* ── TABLET (max 900px) ── */
+@media (max-width: 900px) {
+  /* Container padding */
+  .container { padding: 0 2rem; }
+  .section { padding: 5rem 0; }
+
+  /* Navbar */
+  .navbar { padding: 0 1.5rem; }
+
+  /* Hero */
+  .hero { padding: 100px 1.5rem 4rem; }
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .hero-image-col { order: -1; }
+  .hero-text-col { display: flex; flex-direction: column; align-items: center; }
+  .hero-desc { max-width: 100%; }
+  .hero-contacts { justify-content: center; }
+  .hero-btns { justify-content: center; }
+  .profile-photo-placeholder,
+  .profile-photo { width: 260px; height: 320px; }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-image-wrap { max-width: 340px; margin: 0 auto; }
+
+  /* Skills */
+  .skills-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+  /* Projects */
+  .projects-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+/* ── MOBILE (max 768px) ── */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar { padding: 0 1.2rem; }
+  .nav-links { display: none; }
+  .cv-btn:not(.mobile-cv) { display: none; }
+  .hamburger { display: flex; cursor: pointer; }
+
+  /* Hero */
+  .hero { padding: 90px 1.2rem 3rem; min-height: auto; }
+  .hero-name { font-size: clamp(2.8rem, 12vw, 4rem); text-align: center; }
+  .hero-label { font-size: 0.65rem; text-align: center; }
+  .hero-desc { font-size: 0.9rem; text-align: center; }
+  .hero-contacts { flex-direction: column; align-items: center; gap: 0.5rem; }
+  .contact-chip { font-size: 0.68rem; }
+  .hero-btns { flex-direction: column; align-items: center; width: 100%; }
+  .btn-primary, .btn-outline { width: 100%; max-width: 280px; justify-content: center; }
+  .profile-badge { display: none; }
+  .profile-photo, .profile-photo-placeholder { width: 220px; height: 270px; }
+  .hero-bg-shapes { display: none; } /* hide large blobs that overflow on mobile */
+
+  /* Section headers */
+  .section-header { margin-bottom: 3rem; }
+  .section-title { font-size: clamp(2rem, 8vw, 3rem); }
+
+  /* About */
+  .about-stats { flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+  .stat { align-items: center; }
+  .stat-num { font-size: 1.8rem; }
+
+  /* Skills */
+  .skill-card { padding: 1.2rem; }
+
+  /* Services / Achievements */
+  .services-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+  .service-card { padding: 1.5rem; }
+
+  /* Experience tabs */
+  .experience-tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
+  }
+  .experience-tabs::-webkit-scrollbar { display: none; }
+  .exp-tab {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Timeline */
+  .timeline-item { padding-left: 1rem; }
+  .timeline-header { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+  .inst-logo { width: 36px; height: 36px; }
+
+  /* Projects */
+  .project-filters {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .filter-btn { font-size: 0.72rem; padding: 0.4rem 1rem; }
+  .project-info { padding: 1rem; }
+  .project-info h3 { font-size: 1rem; }
+
+  /* Contact */
+  .contact-form-wrap { padding: 1.5rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .detail-value { font-size: 0.78rem; word-break: break-all; }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* ── SMALL MOBILE (max 480px) ── */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar { padding: 0 1rem; }
+  .nav-logo { font-size: 1.2rem; }
+
+  /* Hero */
+  .hero { padding: 80px 1rem 2.5rem; }
+  .hero-name { font-size: clamp(2.4rem, 14vw, 3.5rem); }
+  .profile-photo, .profile-photo-placeholder { width: 180px; height: 225px; }
+
+  /* Container */
+  .container { padding: 0 1rem; }
+  .section { padding: 4rem 0; }
+
+  /* About stats */
+  .about-stats { gap: 1rem; }
+  .stat-num { font-size: 1.6rem; }
+
+  /* Mobile menu links */
+  .mobile-link { font-size: 1.6rem; }
+
+  /* Misc overflow protection */
+  * { word-break: break-word; }
+  img { max-width: 100%; height: auto; }
+}
+
+/* ── Touch device: fix hover/cursor states ── */
+@media (hover: none) and (pointer: coarse) {
+  .filter-btn, .exp-tab, button, a { cursor: pointer !important; }
+  /* Disable mouse-only tilt transform so cards don't get stuck mid-tilt */
+  .service-card, .project-card { transform: none !important; }
+  /* Disable parallax shapes movement via JS (shapes already hidden on small screens) */
+}
+
+/* =============================================
+   MOBILE POLISH — ADDITIONAL FIXES
+   ============================================= */
+
+/* ── Prevent ALL horizontal overflow globally ── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ── Fix skill-card hover translateX on mobile (doesn't get stuck) ── */
+@media (hover: none) and (pointer: coarse) {
+  .skill-card:hover { transform: none; }
+  .service-card:hover { transform: none; }
+  .project-card:hover { transform: none; }
+}
+
+/* ── Timeline: inst-logo + h4 wraps gracefully ── */
+@media (max-width: 768px) {
+  .timeline-content h4 {
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .inst-logo { width: 28px; height: 28px; }
+  .timeline-content h3 { font-size: 1.1rem; }
+  .timeline { padding-left: 1.5rem; }
+  .timeline-marker { left: -1.5rem; }
+
+  /* Skills grid: 2 cols on mid-size mobile instead of crushing to 1 */
+  .skill-cards { gap: 0.8rem; }
+  .skill-card { padding: 1rem 1.2rem; }
+  .skill-name { font-size: 0.88rem; }
+
+  /* Section sub-text */
+  .section-sub { font-size: 0.85rem; }
+
+  /* Contact detail items: prevent email overflow */
+  .contact-detail-item { flex-wrap: nowrap; align-items: flex-start; }
+  .detail-value {
+    font-size: 0.78rem;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+
+  /* Contact form: full-width inputs */
+  .contact-form-wrap { padding: 1.2rem; }
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+
+  /* Project filter buttons: allow smaller wrapping */
+  .filter-btn {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.8rem;
+  }
+
+  /* Project tags wrap cleanly */
+  .project-tags { flex-wrap: wrap; gap: 0.4rem; }
+
+  /* Footer */
+  .footer { padding: 2rem 0; }
+  .footer-logo { font-size: 1.5rem; }
+  .footer-text { font-size: 0.75rem; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  /* Scroll indicator hidden on very small screens */
+  .scroll-indicator { display: none; }
+
+  /* Marquee text slightly smaller */
+  .marquee-track span { font-size: 0.7rem; }
+
+  /* Badge floaters definitely off */
+  .profile-badge { display: none !important; }
+
+  /* Section tag */
+  .section-tag { font-size: 0.62rem; }
+
+  /* Timeline tighter */
+  .timeline { padding-left: 1.2rem; }
+  .timeline-marker { left: -1.2rem; }
+  .timeline-item { margin-bottom: 2rem; }
+
+  /* Experience tabs: force horizontal scroll */
+  .experience-tabs {
+    justify-content: flex-start;
+    padding: 0 0 0.5rem 0;
+  }
+  .exp-tab { font-size: 0.7rem; padding: 0.4rem 0.8rem; white-space: nowrap; }
+
+  /* Services grid stays single col */
+  .services-grid { grid-template-columns: 1fr; }
+
+  /* About image accent offset reduced so it stays inside screen */
+  .about-img-accent { inset: 10px -10px -10px 10px; }
+
+  /* Noise overlay — slightly reduce on mobile for perf */
+  .noise { opacity: 0.3; }
 }
