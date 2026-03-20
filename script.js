@@ -1,5 +1,5 @@
 /* =============================================
-   PORTFOLIO SCRIPT - Sanhinda Liyanage
+   PORTFOLIO SCRIPT - Vethum Hewage
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -189,16 +189,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ─── PARALLAX HERO SHAPES ─── */
-  const shapes = document.querySelectorAll('.shape');
-  document.addEventListener('mousemove', e => {
-    const xPct = (e.clientX / window.innerWidth - 0.5) * 2;
-    const yPct = (e.clientY / window.innerHeight - 0.5) * 2;
-    shapes.forEach((shape, i) => {
-      const speed = (i + 1) * 12;
-      shape.style.transform = `translate(${xPct * speed}px, ${yPct * speed}px)`;
+  /* ─── PARALLAX HERO SHAPES (desktop only) ─── */
+  const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  if (!isTouch) {
+    const shapes = document.querySelectorAll('.shape');
+    document.addEventListener('mousemove', e => {
+      const xPct = (e.clientX / window.innerWidth - 0.5) * 2;
+      const yPct = (e.clientY / window.innerHeight - 0.5) * 2;
+      shapes.forEach((shape, i) => {
+        const speed = (i + 1) * 12;
+        shape.style.transform = `translate(${xPct * speed}px, ${yPct * speed}px)`;
+      });
     });
-  });
+  }
 
 
   /* ─── SMOOTH SCROLL for NAV LINKS ─── */
@@ -271,23 +274,25 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ─── CARD TILT on Mouse Move ─── */
-  const tiltCards = document.querySelectorAll('.service-card, .project-card');
-  tiltCards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const cx = rect.width / 2;
-      const cy = rect.height / 2;
-      const rotX = (y - cy) / cy * -5;
-      const rotY = (x - cx) / cx * 5;
-      card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+  /* ─── CARD TILT on Mouse Move (desktop only) ─── */
+  if (!isTouch) {
+    const tiltCards = document.querySelectorAll('.service-card, .project-card');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const cx = rect.width / 2;
+        const cy = rect.height / 2;
+        const rotX = (y - cy) / cy * -5;
+        const rotY = (x - cx) / cx * 5;
+        card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
     });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
+  }
 
 
   /* ─── SCROLL PROGRESS INDICATOR ─── */
